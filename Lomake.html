@@ -3,6 +3,7 @@
 
 <head>
     <title>Contact form</title>
+    <link type="text/css" rel="stylesheet" charset="UTF-8" href="styles.css">
 </head>
 <form>
     <table>
@@ -12,24 +13,26 @@
                     <legend>Contact information:</legend>
                     <table>
                         <tr>
-                            <td><label for="fname">First name:</label></td>
+                            <td><label for="fname" class="label">First name:</label></td>
                             <td><input type="text" id="fname" name="fname"></td>
                             <td colspan="2"><label>Preferred contact method:</label></td>
                         </tr>
                         <tr>
-                            <td><label for="lname">Last name:</label></td>
+                            <td><label for="lname" class="label">Last name:</label></td>
                             <td><input type="text" id="lname" name="lname"></td>
-                            <td><input type="checkbox" id="selectemail" value="selectemail"></td>
-                            <td><label for="selectemail">Email</td>
+                            <td>
+                                <input type="checkbox" id="selectemail" value="selectemail">
+                                <label for="selectemail" class="contact-method label">Email</td>
                         </tr>
                         <tr>
-                            <td><label for="email">Email:</label></td>
+                            <td><label for="email" class="label">Email:</label></td>
                             <td><input type="email" id="email" name="email"></td>
-                            <td><input type="checkbox" id="selectphone" value="selectphone"></td>
-                            <td><label for="selectphone">Telephone</td>
+                            <td>
+                                <input type="checkbox" id="selectphone" value="selectphone">
+                                <label for="selectphone" class="contact-method label">Telephone</td>
                         </tr>
                         <tr>
-                            <td><label for="phone">Telephone:</label></td>
+                            <td><label for="phone" class="label">Telephone:</label></td>
                             <td><input type="tel" id="phone" name="phone"></td>
                         </tr>
                     </table>
@@ -42,18 +45,18 @@
                     <legend>Feedback:</legend>
                     <table>
                         <tr>
-                            <td><label for="subject">Message subject:</label></td>
+                            <td><label for="subject" class="label">Message subject:</label></td>
                             <td><input type="text" id="subject" name="subject"></td>
                         </tr>
                         <tr>
                             <td colspan="2"><textarea id="feedback" name="feedback" rows="10" cols="60"></textarea></td>
                         </tr>
                         <tr>
-                            <td><label for="file">Attach a file:</label></td>
+                            <td><label for="file" class="label">Attach a file:</label></td>
                             <td><input type="file" id="file" name="file"></td>
                         </tr>
                         <tr>
-                            <td><input type="submit" value="send"></td>
+                            <td colspan="2"><input id="SendButton" type="submit" value="send"></td>
                         </tr>
                     </table>
                 </fieldset>

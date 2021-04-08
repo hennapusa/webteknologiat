@@ -1,0 +1,42 @@
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+form {
+    background-color: blueviolet;
+}
+fieldset{
+    background-color: cadetblue;
+    border-radius: 10px;
+    border-style: double;
+    margin: 5px;
+}
+legend{
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+input, textarea{
+    border-radius: 5px;
+    border-width: 1;
+    border-color: darkblue;
+}
+input:focus, textarea:focus{
+    background-color: cornflowerblue;
+}
+input[type=submit]{
+    border-color: black;
+}
+label.label{
+    color: darkblue;
+}
+input[type=text], input[type=email], input[type=tel], textarea{
+    width: 100%;
+}
+td{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#SendButton{
+    float: right;
+}

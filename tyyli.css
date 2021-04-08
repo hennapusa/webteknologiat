@@ -1,0 +1,21 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+form {
+    background-color: aquamarine;
+}
+h1{
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+}
+p{
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+}
+ul{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+label.label{
+    color: darkorange;
+}
