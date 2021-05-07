@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <nav class="nav">
+        <a class="nav-link active" aria-current="page" href="index2.html">Home</a>
+        <a class="nav-link"
+            href="https://www.google.com/maps?q=' + Yliopistonkatu 36 + Lappeenranta + '&output=embed">Map</a>
+
+    </nav>
+
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Katuosoite</label>
+        <input type="text" class="form-control" id="adresstext" placeholder="Yliopistonkatu 36">
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Kaupunki</label>
+        <input type="text" class="form-control" id="citytext" placeholder="Lappeenranta">
+        <button type="button" class="btn btn-primary" onclick="showResult()">Hae</button>
+    </div>
+
+    <iframe src="https://www.google.com/maps?q=Yliopistonkatu36Lappeenranta&output=embed" frameBorder="200" width="400"
+        height="300" id="myMap">
+    </iframe>
+    <script defer src="js/map.js"></script>
+</body>
+
+</html>
